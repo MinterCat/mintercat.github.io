@@ -47,27 +47,14 @@ button{
   }
 </style>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="function.js"></script>
 </header>
 <body>
 <center>
-<form method='post'>
+<form>
 	<input class='enjoy-css' type='text' placeholder='Search...' name='hash' size='100'>
-	<button type='submit'><i class='fa fa-search'></i></button>
+	<button type='submit' onclick='connect()'><i class='fa fa-search'></i></button>
 </form>
-
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script>
-	$( document ).ready(function(){
-	  $( "form" ).submit(function(){
-	    var formData = $( this ).serialize(); // создаем переменную, которая содержит закодированный набор элементов формы в виде строки
-
-	    $.post( "index.html", formData, function( data ) { //  передаем и загружаем данные с сервера с помощью HTTP запроса методом POST
-	      $( "div" ).html( data ); // вставляем в элемент <div> данные, полученные от сервера
-	    })
-	  });
-	});
-		</script>
-<div></div>
 
 </center>
 </body>
