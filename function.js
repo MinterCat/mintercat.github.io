@@ -1,8 +1,6 @@
 function connect(hash) {
 	var str = strtolower(hash);
-	var p;
-    p = document.getElementById('text_change');
-    p.innerHTML = str;
+	document.write(str);
 }
 function file_get_contents( url ) {	// Reads entire file into a string
 
