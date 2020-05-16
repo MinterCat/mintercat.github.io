@@ -1,6 +1,6 @@
 function connect(hash) {
-	
-	print_r(hash);
+	var str = strtolower(hash);
+	print_r(str);
 }
 function file_get_contents( url ) {	// Reads entire file into a string
 
