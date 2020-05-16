@@ -1,4 +1,7 @@
 <?php
+require_once('header.php');
+//-----------------------------------
+
 $site = strtolower($_POST['hash']);
 
 $key = explode("/", $site)[1];
