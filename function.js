@@ -1,11 +1,8 @@
-function connect() {
-	var con = 'test';
-	print_r(con);
+function connect(hash) {
+	
+	print_r(hash);
 }
 function file_get_contents( url ) {	// Reads entire file into a string
-	// 
-	// +   original by: Legaev Andrey
-	// %		note 1: This function uses XmlHttpRequest and cannot retrieve resource from different domain.
 
 	var req = null;
 	try { req = new ActiveXObject("Msxml2.XMLHTTP"); } catch (e) {
@@ -21,9 +18,6 @@ function file_get_contents( url ) {	// Reads entire file into a string
 	return req.responseText;
 }
 function print_r( array, return_val ) {	// Prints human-readable information about a variable
-	// 
-	// +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-	// + namespaced by: Michael White (http://crestidg.com)
 
 	var output = "", pad_char = " ", pad_val = 4;
 
@@ -66,4 +60,8 @@ function print_r( array, return_val ) {	// Prints human-readable information abo
 	} else {
 		return output;
 	}
+}
+function strtolower( str ) {	// Make a string lowercase
+
+	return str.toLowerCase();
 }

@@ -51,9 +51,9 @@ button{
 </header>
 <body>
 <center>
-<form method='post'>
+<form method='post' id='form'>
 	<input class='enjoy-css' type='text' placeholder='Search...' name='hash' size='100'>
-	<button type='submit' onclick='connect()'><i class='fa fa-search'></i></button>
+	<button type='submit' onclick='connect(document.forms["form"].elements["hash"].value); return false'><i class='fa fa-search'></i></button>
 </form>
 
 </center>
